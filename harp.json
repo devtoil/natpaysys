@@ -1,13 +1,3 @@
 {
-  "globals": {
-    "title": "Remedy",
-    "description": "A Harp Boilerplate.",
-    "name": "Annie Person",
-    "email": "you@example.com",
-    "uri": "example.com",
-
-    "typekit": false,
-    "analytics": false,
-    "disqus": false
-  }
+	"domains":[]
 }

@@ -1,42 +1,53 @@
-# Remedy
+## Telephasic 1.0 by HTML5 UP, modified for Harp
+harp.io | @HarpPlatform
 
-A Harp boilerplate.
+This template has been modified to work with the [@HarpPlatform](http://twitter.com/HarpPlatform) and [@HarpWebServer](http://twitter.com/HarpWebServer), they contain partials and layouts so the code is easier to manage and dry. You can put this template online in seconds with the [Harp Platform](https://www.harp.io), or run it locally with the [Harp WebServer](http://harpjs.com).
 
-[Get started with Harp here](http://harpjs.com/docs/quick-start), or edit this blog from your Dropbox right away, by [publishing Remedy on the Harp Platform](https://www.harp.io/boilerplates?bp=hb-remedy) through Dropbox right away.
+[View a live demo](http://telephasic.harp.io) 
 
-## Get started
+This beautiful template is created by AJ at HTML5 UP, and license, and attribution is below.
 
-```sh
-npm install -g harp
-# May need to preface with sudo
-harp init my-blog --boilerplate kennethormandy/hb-remedy
-harp server my-blog
-```
+### Original Readme and License
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-Now visit [localhost:9000](http://localhost:9000) in your browser.
 
-[![A screenshot of an article in this Harp boilerplate.](https://raw.github.com/kennethormandy/hb-remedy/5b4af26eb5f56b4341016f2ed84d9ad560edcfcc/public/images/screenshot.png)](http://remedy.harpapp.io)
+This is Telephasic, a brand new site template for HTML5 UP. It features a sharp, modern
+design inspired by omfg everything, and makes good use of SVGs to ensure stuff looks
+nice and crispy on retina displays.
 
-The photograph is [Brandon J. Bilinski – Under Construction](http://www.flickr.com/photos/25751498@N06/6434260649/).
+A quick note before you jump in: this template is built VERY different to my other stuff
+at H5U. Specifically, the breakpoints are entirely different: rather than just three
+device-oriented breakpoints (desktop, tablet, mobile), Telephasic uses six content-oriented
+ones. Starting with "n1" (which targets the widest displays), each additional stylesheet
+("n2", "n3", and so on) progressively alters the design for narrower and narrower displays
+until it hits "n6" (which targets mobile displays). This approach, while a bit more
+confusing at first, allows the design to fit a much, much wider range of displays, which is
+increasingly important in this age of phones, tablets, "phablets", and hell, probably
+"smart watches" at some point down the road. That said, I'm still experimenting with this way
+of doing stuff, so feel free to email/tweet me your feedback/questions/complaints/etc.
+	
+Demo images* are courtesy of Felicia Simion, an amazing photographer with an
+incredible portfolio over at deviantART:
 
-### Remedy sports&hellip;
+http://ineedchemicalx.deviantart.com/
 
-* Comments through Disqus
-* Improved support for fonts via Google Fonts or Typekit
-* Per-post banners
-* Stylised pullquotes and blockquotes from Markdown
-* Next and previous post links
-* [Private draft posts](http://kennethormandy.com/journal/static-draft-posts-with-harp)
-* Very light styling and markup, so it’s ready to customise
+* Not included with this download (replaced with generic placeholder images).
+I only have permission to use her work in my own onsite demos so do NOT download
+or use any of her photos without her explicit permission.
 
-…and is totally static, thanks to [Harp](http://harpjs.com).
 
-## Photographs
+AJ
+n33.co @n33co dribbble.com/n33
 
-All photographs included in this boilerplate are copyright [Brandon J. Bilinski](http://www.flickr.com/photos/25751498@N06), used as examples with permission. They are not considered to be part of the source code of this project, and are therefore not available under the following license.
-
-## License
-
-[The MIT License (MIT)](LICENSE.md)
-
-Copyright © 2013–2014 [Kenneth Ormandy](http://kennethormandy.com)
+Credits
+- Original Source: html5up.net
+- Images (Demo Only)
+	- Felicia Simion (http://ineedchemicalx.deviantart.com/)
+- Icons
+	- Font Awesome (http://fortawesome.github.com/Font-Awesome/)
+- Other
+	- jQuery (jquery.com)
+	- html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+	- Dropotron (n33.co)
+	- skel.min.js + skel-panels.min.js (n33.co)

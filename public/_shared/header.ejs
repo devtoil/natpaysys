@@ -1,12 +1,11 @@
 <div id="header-wrapper">
 
-	<%- partial("_shared/nav") %>
+	<!-- nav.ejs include -->
+	<%- partial("nav") %>
 
-	<!-- Hero -->
 	<% if (current.source === "index") { %>
-
-		<%- partial("_shared/intro") %>
-
+		<!-- hero.ejs include (home page only) -->
+		<%- partial("partials/hero") %>
 	<% } %>
 
 </div>

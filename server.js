@@ -6,10 +6,10 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 
 var transporter = nodemailer.createTransport({
-    service: 'Godaddy',
+    service: 'gmail',
     auth: {
-        user: 'Info@natpaysys.com',
-        pass: 'Natpaysys14$'
+        user: 'snkain2003@gmail.com',
+        pass: 'clarinet_2013'
     }
 });
 

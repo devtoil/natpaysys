@@ -32,3 +32,26 @@
 	background: none;
 	border: none;
 }
+
+#header-wrapper {
+	background: black;
+	background-image: url('images/header.svg');
+	background-image: url('images/header.svg'), -moz-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
+	background-image: url('images/header.svg'), -webkit-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
+	background-image: url('images/header.svg'), -o-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
+	background-image: url('images/header.svg'), -ms-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
+	background-image: url('images/header.svg'), linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
+}
+
+
+#hero .button {
+	color: #C32431;
+}
+
+#hero .button:hover {
+	color: white;
+}
+
+.image-wrapper.first:before {
+	max-width: 100%;
+}

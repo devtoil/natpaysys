@@ -1,5 +1,26 @@
+h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #132A5B;
+	margin-bottom: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 30px;
+}
+.emphasis {
+	color: #f35858;
+}
+.subtitle {
+	font-weight: bold;
+}
+
+
 .feature-wrapper {
 	margin-top: 50px;
+}
+ul.bullets > li {
+	margin-left: 40px;
+	list-style-type: disc;
 }
 
 #nav > ul {

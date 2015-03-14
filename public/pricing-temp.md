@@ -67,7 +67,7 @@ Pricing
 		with your current pricing model you do not 	
 		use an example of 30 basis point and 0 markup for transaction cost
 		
-		let us com in and analyze your statement
+		let us come in and analyze your statement
 
 
 

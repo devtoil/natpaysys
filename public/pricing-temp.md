@@ -135,3 +135,99 @@ $80					$212		$114		$294	$322
 
 Take the guess work out of processing rates.
 There are hundreds of interchange rates that are dependent upon the type of card being used, how it is processed and industry of the merchant.  We used the Visa Rewards 2 card in this example but it could be any card in the market.  With a different card the interchange rate would change but the rates charged by all the models would stay the same except for Interchange Plus.  Regardless of card type, swiped or keyed or industry the mark up with Interchange Plus will always be the same, negotiated fixed rate.   
+
+
+
+
+
+
+
+
+		<div class="row">
+			<section class="12u">
+				<h3>Example</h3>
+				<p>Explain Example</p>
+			</section>
+		</div>
+
+		<div class="row">
+			<section class="6u">Monthly Volume: </section>
+			<section cleass="6u right">$20,000</section>
+		</div>
+		<div class="row">
+			<section class="6u">Average Ticket: </section>
+			<section cleass="6u right">$100</section>
+		</div>
+		<div class="row">
+			<section class="6u">Visa Rewards 2 Interchange: </section>
+			<section cleass="6u right">1.95% and $0.10, </section>
+		</div>
+		<div class="row">
+			<section class="12u">this falls into the Non-Qualified rate for tiered pricing</section>
+		</div>
+		<div class="row">
+			<section class="6u">Assessments:  </section>
+			<section cleass="6u right">0.13%</section>
+		</div>
+		<div class="row">
+			<section class="12u">With these assumptions the cost for all processors is $2.18.</section>
+		<div class="row">
+			<section class="3u center">IC rate(transaction amount)</section>
+			<section class="3u center">+Assessments(transaction amount)</section>
+			<section class="3u center">+transaction fee</section>
+			<section class="3u center">=total cost</section>
+		</div>
+		<div class="row">
+			<section class="3u center">1.95%($100)</section>
+			<section class="3u center">+0.13%($100)</section>
+			<section class="3u center">+$0.10</section>
+			<section class="3u center">=$2.18</section>
+		</div>
+
+
+
+
+		<div class="row">
+			<section class="12u">
+				<h3>Interchange Plus - our pricing model</h3>
+
+				<p>Explain Interchange plus</p>
+			</section>
+		</div>
+		<div class="row">
+			<section class="4u">Interchange:</section>
+			<section class="4u">1.95%($100) + $0.10 = </section>
+			<section class="4u right">2.05</section>
+		</div>
+		<div class="row">
+			<section class="4u">Assessments:</section>
+			<section class="4u">0.13%($100)=</section>
+			<section class="4u right">+0.13</section>
+		</div>
+		<div class="row">
+			<section class="4u">Processor’s Fee:</section>
+			<section class="4u">0.30%($100) + $0.10 =</section>
+			<section class="4u right">+0.40</section>
+		</div>
+		<div class="row">
+			<section class="4u">Total Rate =</section>
+			<section class="4u"></section>
+			<section class="4u right">2.58</section>
+		</div>
+		<div class="row">
+			<section class="4u">Total Cost =</section>
+			<section class="4u"></section>
+			<section class="4u right">-2.18</section>
+		</div>
+		<div class="row">
+			<section class="4u">Mark Up =</section>
+			<section class="4u"></section>
+			<section class="4u right">0.40</section>
+		</div>
+		<div class="row">
+			<section class="12u">
+				<p>Note:  Remember that Interchange and Assessments are the same for all processors.  With Interchange Plus pricing the Total Rate is simply the cost  of the transaction plus the processor’s fee.  This is the most transparent pricing model available in the industry.  Regardless of the type of card used in this example, the mark up would always be $0.40.</p>
+			</section>
+		</div>
+
+

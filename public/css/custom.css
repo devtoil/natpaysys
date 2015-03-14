@@ -14,6 +14,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+form input.text, form select, form textarea {
+	padding: 5px;
+}
+
+input {
+	font-size: initial;
+}
+
+#contact-form .row > * {
+	padding-bottom: 10px;
+}
 
 .feature-wrapper {
 	margin-top: 50px;

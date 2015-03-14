@@ -4,6 +4,10 @@ var app = express();
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var multer = require('multer');
+var nodeExpressHandlebars = require('nodemailer-express-handlebars');
+var handlebars = require('express-handlebars');
+var path = require('path');
+
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -13,29 +17,37 @@ var transporter = nodemailer.createTransport({
     }
 });
 
+var viewEngine = handlebars.create({});
+
+var sut = nodeExpressHandlebars({
+    viewEngine: viewEngine,
+    viewPath: path.resolve(__dirname, './emails'),
+    extName: '.hb'
+});
+
+transporter.use('compile', sut);
+
+
 app.use(bodyParser.json());
 app.use(express.urlencoded());
 
-app.use(multer({ dest: './uploads/'}));
+app.use(multer({ 
+	dest: './uploads/',
+	rename: function (fieldname, filename) {
+		console.log(filename, filename);
+    return filename
+  }
+}));
 
 app.post('/contact', function (req, res) {
-	console.log(req.body);
-	console.log(req.files);
-	var body = req.body;
-	var html = [];
-	for(var item in body) {
-		html.push('<p>');
-		html.push(item);
-		html.push(': ');
-		html.push(body[item]);
-		html.push('<p>');
-	}
+	var contact = req.body;
 
 	transporter.sendMail({
 	    from: 'info@natpaysys.com',
 	    to: 'snkain2003@gmail.com',
 	    subject: 'Contact Submit',
-	    html: html
+	    template: 'contact',
+	    context: contact
 	}, function(err, info){
 			if(err) {
 				console.log(err);

@@ -7,7 +7,7 @@
 
 	<div class="row">
 
-		<form method="post" action="/contact" enctype="multipart/form-data">
+		<form method="post" id="contact-form" action="/contact" enctype="multipart/form-data">
 
 			<section class="5u">
 				<div class="row half">
@@ -19,19 +19,15 @@
 					  <label for="">Business Name</label>
 						<input name="businessName" type="text" class="text" />
 					</div>
-				</div>
-				<div class="row half">
-					<div class="6u">
+					<div class="12u">
 						<label for="">Phone</label>
 						<input name="phone" type="text" class="text" />
 					</div>
-					<div class="6u">
+					<div class="12u">
 						<label for="">Email</label>
 						<input name="email" type="text" class="text" />
 					</div>
-				</div>
-				<div class="row half">
-					<div class="6u">
+					<div class="12u">
 						<label for="">Zip</label>
 						<input name="zip" type="text" class="text" />
 					</div>
@@ -42,28 +38,21 @@
 				<div class="row half">
 					<div class="12u">
 						<label for="">Does your business currently accept credit cards?</label>
-						<input name="accept-cards" placeholder="Phone" value="Yes" type="radio" /> Yes
-						<input name="accept-cards" placeholder="Phone" value="No" type="radio" /> No
+						<input name="cardsAccepted" value="Yes" type="radio" /> Yes
+						<input name="cardsAccepted" value="No" type="radio" /> No
 					</div>
 					<div class="12u">
 						<label>Referral number or partner association name</label>
 						<input name="referralNumber" type="text" class="text" />
 					</div>
-				</div>
-				<div class="row half">
 					<div class="12u">
 						Upload a copy of your most recent processing statement
 						<input name="statement" type="file" class="text" />
 					</div>
-				</div>
-			
-				<div class="row half">
 					<div class="12u">
 						<label>Message</label>
 						<textarea name="message"></textarea>
 					</div>
-				</div>
-				<div class="row half">
 					<div class="12u">
 						<ul class="actions">
 							<li><button type="submit" href="#" class="button">Send</button></li>

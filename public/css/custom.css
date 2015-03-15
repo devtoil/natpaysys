@@ -13,6 +13,34 @@ h1, h2, h3, h4, h5, h6 {
 .subtitle {
 	font-weight: bold;
 }
+strong {
+	font-weight: bold;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+table {
+	width: 75%;
+	margin: 0 auto 25px;
+}
+table tbody tr {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+}
+table tbody td {
+	border-right: 1px solid #333;
+	padding: 10px;
+}
+
+
 
 form input.text, form select, form textarea {
 	padding: 5px;

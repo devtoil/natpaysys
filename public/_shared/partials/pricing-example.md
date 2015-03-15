@@ -4,24 +4,24 @@
 
 
 | 	 							|
-| :------------ 				|---------------:
+| ------------					|---------------:
 | Monthly Volume				| $20,000
 | Average Ticket				| $100
 | Visa Rewards Interchange Rate	| 1.95% & $0.10
 | Dues & Assessments:			| 0.13%
 
-this falls into the Non-Qualified rate for tiered pricing
+<div class="right"> `*` *this falls into the Non-Qualified rate for tiered pricing* </div>
 
 With these assumptions the cost for all processors is $2.18.
 
 | 						|								|					|
-| ----------------		|	--------------				|	--------------	|
+| :----------------:	| :--------------:				| :--------------:	| :--------------:
 | IC rate (transaction)	| + Assessments (transaction)	| + transaction fee	| = total cost
 | 1.95% ($100) 			| + 0.13% ($100) 				| + $0.10 			| = $2.18
 
 ##Total Rate and Markup for each pricing model
 
-###Interchange Plus
+###<a name="interchange-plus">Interchange Plus</a>
 
 | 					|							|
 | ----------------	|	--------------:			|	--------------:		
@@ -30,40 +30,40 @@ With these assumptions the cost for all processors is $2.18.
 | Processor’s Fee	|	0.30%( $100) + $0.10 	|	+0.40
 | Total Rate 		|							|	2.58
 | Total Cost 		|							|	-2.18
-| Mark Up 			|							|	0.40
+| Mark Up 			|							|	**0.40**
 
 Note:  Remember that Interchange and Assessments are the same for all processors.  With Interchange Plus pricing the Total Rate is simply the cost  of the transaction plus the processor’s fee.  This is the most transparent pricing model available in the industry.  Regardless of the type of card used in this example, the mark up would always be $0.40.
 
-###Tiered
+###<a name="tiered">Tiered</a>
 
 | 						|							|
 | ----------------		|	--------------:			|	--------------:		
 | Non Qualified Rate	|	2.99% ($100) + $0.25 	|	3.24
 | Total Cost			|							|	-2.18
-| Mark Up				|							|	1.06
+| Mark Up				|							|	**1.06**
 
 Note:  Remember that with tiered pricing the type of card is arbitrarily assigned to the Qualified, Mid-Qualified or Non-Qualified bucket.  This means that one month the Visa Rewards 2 Card could be in the Mid-Qualified bucket and the next month it is in the Non-Qualified bucket.  The processor’s profit is uncertain and dependent upon which card type they choose to place into each bucket. 
 
 
-###Flat Rate
+###<a name="flat-rate">Flat Rate</a>
 
 						
 | 						|							|
 | ----------------		|	--------------:			|	--------------:		
 | Swiped				|	2.75% ($100)			|	2.75
 | Total Cost			|							|	-2.18
-| Mark Up				|							|	0.57
+| Mark Up				|							|	**0.57**
 
 | 						|							|
 | ----------------		|	--------------:			|	--------------:		
 | Keyed					|	3.50% ($100) + $0.15	|	3.65
 | Total Cost			|							|	-2.18
-| Mark Up				|							|	1.47
+| Mark Up				|							|	**1.47**
 
 
 Note:  Remember that rates are generally simple or competitive but not both.  In this example the rate seems to be reasonable but let’s assume that the card used is a Regulated Debit Card.  The cost would drop from $2.18 to $0.27.  This would give this processor a $2.48 swiped mark up and a $3.38 keyed mark up.
 
-###Enhanced Billback (EBB)
+###<a name="ebb">EBB (Enhanced Billback)</a>
 
 
 | 					|							|
@@ -73,7 +73,7 @@ Note:  Remember that rates are generally simple or competitive but not both.  In
 | Enhancement		|	1.59%( $100)		 	|	+1.59
 | Total Rate 		|							|	3.79
 | Total Cost 		|							|	-2.18
-| Mark Up 			|							|	1.61
+| Mark Up 			|							|	**1.61**
 
 
 Note:  This pricing model quotes a low qualified rate that shows up on the monthly statement.  After reconciling the low rate with the actual interchange rate,  the merchants charged the difference with an “enhancement” fee the following month on the same transaction.

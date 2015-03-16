@@ -1,12 +1,13 @@
 h1 {
-	font-size: 2.5em;
-	font-weight: bold;
-	color: #132A5B;
-	margin-bottom: 40px;
+	font-size: 3em;
+	/*font-weight: bold;*/
+	/*color: #132A5B;*/
+	margin: 40px 0;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 30px;
 }
+
 .emphasis {
 	color: #f35858;
 }
@@ -40,8 +41,6 @@ table tbody td {
 	padding: 10px;
 }
 
-
-
 form input.text, form select, form textarea {
 	padding: 5px;
 }
@@ -50,8 +49,26 @@ input {
 	font-size: initial;
 }
 
+.emphasis {
+	color: #f35858;
+}
+.subtitle {
+	font-weight: bold;
+}
+
+#promo-wrapper {
+	padding: 0;
+	background-image: url(../images/shop.jpg);
+}
+
 #contact-form .row > * {
 	padding-bottom: 10px;
+}
+#contact-form button[type="submit"] {
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 1em 8em;
+	margin-top: 70px;
 }
 
 .feature-wrapper {
@@ -66,27 +83,49 @@ ul.bullets > li {
 	background: white;
 }
 
+#nav > ul > li > a {
+	background: none;
+	border: none;
+	color: #333;
+}
+#nav > ul > li > a:hover {
+	background: none;
+	border: none;
+	color: #333;
+}
+#nav > ul > li:hover > a {
+	background: none;
+	border: none;
+	color: #333;
+}
+/*
+#nav > ul > li:hover > a {
+	color: #f35858;
+}
+
 #nav > ul > li > span, #nav > ul > li > a {
 	color: gray;
 }
 
 #nav > ul > li > span, #nav > ul:hover > li:hover > a:hover {
 	color: #f35858;
-}
-
-/*#nav > ul > li > span, #nav > ul > li > a:hover {
-	color: #f35858;
 }*/
 
 .pull-left {
 	float: left;
 }
+.text-center {
+	text-align: center;
+}
 
 #logo {
 	left: 0;
-	margin: 10px 0 0 0;
+	margin: 10px 0 0 10px;
 	background: none;
 	border: none;
+	width: auto;
+	height: auto;
+	font-size: initial;
 }
 #logo a {
 	background: none;
@@ -94,13 +133,8 @@ ul.bullets > li {
 }
 
 #header-wrapper {
-	background: black;
-	background-image: url('images/header.svg');
-	background-image: url('images/header.svg'), -moz-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
-	background-image: url('images/header.svg'), -webkit-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
-	background-image: url('images/header.svg'), -o-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
-	background-image: url('images/header.svg'), -ms-linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
-	background-image: url('images/header.svg'), linear-gradient(75deg, #132A5B 15%, #132A5B 55%);
+	background-image: url(../images/table.jpg);
+	/*background-image: url(../images/shop.jpg);*/
 }
 
 

@@ -1,12 +1,46 @@
 (function(){
-	// $.ajax({
-	//   method: "POST",
-	//   url: "/contact",
-	//   contentType: "application/json; charset=utf-8",
- //    dataType: "json",
-	//   data: JSON.stringify({ name: "John", location: "Boston" })
-	// })
- //  .done(function( msg ) {
- //    alert( "Data Saved: " + msg );
- //  });
+	$(document).ready(function(){
+		var $contactForm = $('#contact-form');
+		var $contactSubmitButton = $('#contact-form-submit');
+
+		$contactForm.on('submit', sendContact);
+
+		function sendContact(event){
+			event.preventDefault();
+
+			startContactSending();
+			
+			var data = new FormData($contactForm[0]);
+
+			$.ajax({
+			  method: "POST",
+			  url: "/contact",
+			  contentType: false,
+			  processData: false,
+			  data: data
+			})
+			.success(function(){
+				console.log('contact sent successfully');
+			  endContactSending();
+			})
+		  .error(function( msg ) {	
+		  	endContactSending();
+		  });
+
+		   return false;
+		}
+
+		function startContactSending(){
+			$contactSubmitButton.text('Sending...');
+		}
+
+		function endContactSending(){
+			$contactSubmitButton.text('Sent');
+			$contactForm[0].reset();
+			setTimeout(function(){
+				$contactSubmitButton.text('Send');
+			}, 2000);
+		}
+	});
+	
 }());

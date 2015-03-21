@@ -1,9 +1,8 @@
 h1 {
 	font-size: 3em;
-	/*font-weight: bold;*/
-	/*color: #132A5B;*/
 	margin: 40px 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 30px;
 }
@@ -49,6 +48,10 @@ input {
 	font-size: initial;
 }
 
+.dropotron-level-0:before {
+	border-bottom: solid 0.5em #DFDFDF;
+}
+
 .emphasis {
 	color: #f35858;
 }
@@ -86,7 +89,7 @@ ul.bullets > li {
 #nav > ul > li > a {
 	background: none;
 	border: none;
-	color: #333;
+	color: #333 !important;
 }
 #nav > ul > li > a:hover {
 	background: none;
@@ -98,19 +101,6 @@ ul.bullets > li {
 	border: none;
 	color: #333;
 }
-/*
-#nav > ul > li:hover > a {
-	color: #f35858;
-}
-
-#nav > ul > li > span, #nav > ul > li > a {
-	color: gray;
-}
-
-#nav > ul > li > span, #nav > ul:hover > li:hover > a:hover {
-	color: #f35858;
-}*/
-
 .pull-left {
 	float: left;
 }

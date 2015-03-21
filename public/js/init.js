@@ -50,11 +50,11 @@ skel.init({
 
 jQuery(function() {
 	jQuery('#nav > ul').dropotron({ 
-		offsetY: 0,
+		offsetY: 100,
 		mode: 'fade',
-		speed: 300,
+		speed: 100,
 		alignment: 'center',
 		noOpenerFade: true,
-		detach: false
+		detach: true
 	});
 });

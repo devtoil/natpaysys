@@ -7,7 +7,6 @@ var multer = require('multer');
 var nodeExpressHandlebars = require('nodemailer-express-handlebars');
 var handlebars = require('express-handlebars');
 var path = require('path');
-var fs = require('fs');
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',

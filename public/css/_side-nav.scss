@@ -1,0 +1,23 @@
+.side-nav {
+	border: 1px solid gray;
+
+	li {
+		border-bottom: 1px solid $gray;
+		margin-left: 0 !important;
+		list-style-type: none !important;
+		padding: 10px 10px 10px 35px;
+
+		&:hover {
+			background: #EEE;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: none;
+		}
+	}
+}

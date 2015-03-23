@@ -24,6 +24,7 @@
 			  endContactSending();
 			})
 		  .error(function( msg ) {	
+		  	console.log(msg)
 		  	endContactSending();
 		  });
 

@@ -27,9 +27,11 @@
 
 		<!-- Header Wrapper -->
 		<%- partial("_shared/header") %>
+			
+		<div id="content">
+			<%- yield %>
+		</div>
 		
-		<%- yield %>
-
 		<!-- Footer Wrapper -->
 		<%- partial("_shared/footer") %>
 

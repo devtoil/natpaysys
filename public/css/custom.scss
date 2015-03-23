@@ -1,3 +1,6 @@
+@import 'variables',
+				'side-nav';
+
 h1 {
 	font-size: 3em;
 	margin: 40px 0;
@@ -6,6 +9,8 @@ h1 {
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 30px;
 }
+
+
 
 .emphasis {
 	color: #f35858;
@@ -48,6 +53,16 @@ input {
 	font-size: initial;
 }
 
+#content ul > li {
+	margin-left: 40px;
+	list-style-type: disc;
+}
+
+#header ul li {
+	margin-left: 0;
+	list-style: none;
+}
+
 .dropotron-level-0:before {
 	border-bottom: solid 0.5em #DFDFDF;
 }
@@ -77,10 +92,8 @@ input {
 .feature-wrapper {
 	margin-top: 50px;
 }
-ul.bullets > li {
-	margin-left: 40px;
-	list-style-type: disc;
-}
+
+
 
 #nav > ul {
 	background: white;
@@ -124,6 +137,9 @@ ul.bullets > li {
 
 #header-wrapper {
 	background-image: url(../images/table.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
 	/*background-image: url(../images/shop.jpg);*/
 }
 

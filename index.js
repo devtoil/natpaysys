@@ -8,6 +8,14 @@ var nodeExpressHandlebars = require('nodemailer-express-handlebars');
 var handlebars = require('express-handlebars');
 var path = require('path');
 
+/*
+service: 'GoDaddy',
+    auth: {
+        user: 'info@natpaysys.com',
+        pass: 'Natpaysys14$'
+    }
+*/
+
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {

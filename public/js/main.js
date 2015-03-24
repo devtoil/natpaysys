@@ -42,6 +42,24 @@
 				$contactSubmitButton.text('Send');
 			}, 2000);
 		}
+
+
+		$.getJSON('/solutionsMeta')
+		.then(function(files){
+			console.log(files);
+
+		});
+
+		function buildSolutionsSideNav(files){
+			var nav = $('#solutions-nav');
+			if(!nav.length) {
+				return;
+			}
+		}
+
 	});
+
+
+	
 	
 }());

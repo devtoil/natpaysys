@@ -7,6 +7,7 @@ var multer = require('multer');
 var nodeExpressHandlebars = require('nodemailer-express-handlebars');
 var handlebars = require('express-handlebars');
 var path = require('path');
+var fs = require('fs');
 
 /*
 service: 'GoDaddy',
@@ -56,6 +57,22 @@ app.use(multer({
   }
 }));
 
+app.get('/solutionsMeta', function(req, res){
+  fs.readdir(__dirname + "/public/_shared/partials/solutions", function(err, files){
+    if(err) {
+      console.log(err);
+      return;
+    }
+
+    var names = [].map.call(files, function(file){
+      return file.split('.')[0];
+    });
+
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(names));
+  });
+});
+
 app.post('/contact', function (req, res) {
 	var contact = req.body,
 			files = req.files,
@@ -83,10 +100,30 @@ app.post('/contact', function (req, res) {
 			}
 			if(info) {
 				console.log('mail sent ', info);
+        if(contact.email) {
+          sendSuccessMessage(contact);
+        }
+        
         res.status(200);
         res.send(info);
 			}
 	});
+
+  function sendSuccessMessage(contact){
+      transporter.sendMail({
+          from: 'info@natpaysys.com',
+          to: contact.email,
+          subject: 'Contact Received',
+          template: 'email-sent',
+      }, function(err, info){
+          if(err) {
+            console.log(err);
+          }
+          if(info) {
+            console.log('mail sent ', info);
+          }
+      });
+  }
 });
 
 app.configure(function(){

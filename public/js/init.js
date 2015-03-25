@@ -8,7 +8,7 @@ skel.init({
 	/*
 		Docs @ http://skeljs.org/docs
 	*/
-	prefix: 'css/style',
+	prefix: '/css/style',
 	resetCSS: true,
 	useOrientation: true,
 	boxModel: 'border',

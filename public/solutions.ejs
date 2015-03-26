@@ -3,29 +3,56 @@
 	<div class="container">
 		<div class="row">
 			<div class="3u">
-
 				<ul class="side-nav" id="solutions-nav">
-					<li>
-						<a href="#apple-pay">
-							Apple Pay
-						</a>
-					</li>
+					<% for(var i = 0; i < public._data.solutions.length; i++ ) {  %>
+						<% var solution = public._data.solutions[i] %>
+						<% var formatted = public._data.solutions[i].replace(/-/g, ' ').toUpperCase() %>
+						<li>	
+							<a href="#<%= solution %>">
+								<%= formatted %>
+							</a>
+						</li>
+					<% }  %>
 				</ul>
 			</div>
 			<div class="9u">
-				<div id="apple-pay"></div>
-				<%- partial("_shared/partials/solutions/apple-pay") %>
-				<%- partial("_shared/partials/solutions/perka") %>
-				<%- partial("_shared/partials/solutions/analytics") %>
-				<%- partial("_shared/partials/solutions/clover") %>
-				<%- partial("_shared/partials/solutions/pci") %>
-				<%- partial("_shared/partials/solutions/ach") %>
-				<%- partial("_shared/partials/solutions/ebt") %>
-				<%- partial("_shared/partials/solutions/gift-cards") %>
-				<%- partial("_shared/partials/solutions/emv") %>
-				<%- partial("_shared/partials/solutions/pos") %>
-				<%- partial("_shared/partials/solutions/terminals") %>
-				<%- partial("_shared/partials/solutions/wireless") %>
+				<div id="apple-pay">
+					<%- partial("_shared/partials/solutions/apple-pay") %>
+				</div>
+				<div id="perka">
+					<%- partial("_shared/partials/solutions/perka") %>
+				</div>
+				<div id="analytics">
+					<%- partial("_shared/partials/solutions/analytics") %>
+				</div>
+				<div id="clover">
+					<%- partial("_shared/partials/solutions/clover") %>
+				</div>
+				<div id="pci">
+					<%- partial("_shared/partials/solutions/pci") %>
+				</div>
+				<div id="ach">
+					<%- partial("_shared/partials/solutions/ach") %>
+				</div>
+				<div id="ebt">
+					<%- partial("_shared/partials/solutions/ebt") %>
+				</div>
+				<div id="gift-cards">
+					<%- partial("_shared/partials/solutions/gift-cards") %>
+				</div>
+				<div id="emv">
+					<%- partial("_shared/partials/solutions/emv") %>
+				</div>
+				<div id="pos">
+					<%- partial("_shared/partials/solutions/pos") %>
+				</div>
+				<div id="terminals">
+					<%- partial("_shared/partials/solutions/terminals") %>
+				</div>
+				<div id="wireless">
+					<%- partial("_shared/partials/solutions/wireless") %>
+				</div>
+				
 			</div>
 		</div>
 

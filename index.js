@@ -89,7 +89,7 @@ app.post('/contact', function (req, res) {
 
 	transporter.sendMail({
 	    from: 'info@natpaysys.com',
-	    to: 'snkain2003@gmail.com',
+	    to: 'info@natpaysys.com',
 	    subject: 'Contact Submit',
 	    template: 'contact',
 	    context: contact,

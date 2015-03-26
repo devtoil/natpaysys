@@ -1,5 +1,8 @@
 (function(){
 	$(document).ready(function(){
+
+		var base = 'http://104.236.64.224:9000';
+
 		var $contactForm = $('#contact-form');
 		var $contactSubmitButton = $('#contact-form-submit');
 
@@ -14,7 +17,7 @@
 
 			$.ajax({
 			  method: "POST",
-			  url: "/contact",
+			  url: base + "/contact",
 			  contentType: false,
 			  processData: false,
 			  data: data
@@ -44,7 +47,7 @@
 		}
 
 
-		$.getJSON('/solutionsMeta')
+		$.getJSON(base + '/solutionsMeta')
 		.then(function(files){
 			console.log(files);
 

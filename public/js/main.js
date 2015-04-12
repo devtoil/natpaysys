@@ -1,8 +1,6 @@
 (function(){
 	$(document).ready(function(){
-
-		var base = 'http://104.236.64.224:9000';
-
+		var base = 'http://snaimark.com:9000';
 		var $contactForm = $('#contact-form');
 		var $contactSubmitButton = $('#contact-form-submit');
 
@@ -23,11 +21,9 @@
 			  data: data
 			})
 			.success(function(){
-				console.log('contact sent successfully');
 			  endContactSending();
 			})
 		  .error(function( msg ) {	
-		  	console.log(msg)
 		  	endContactSending();
 		  });
 
@@ -59,10 +55,5 @@
 				return;
 			}
 		}
-
 	});
-
-
-	
-	
 }());

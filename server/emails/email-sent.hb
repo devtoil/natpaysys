@@ -163,8 +163,10 @@ ul li, ol li {
 			<table>
 				<tr>
 					<td>
-						<p>Thanks for reaching out.</p>
-						<p>We will be in touch with you shortly.</p>
+						<p><a href="http://natpaysys.com"><img src="http://natpaysys.com/images/npslogo.png" width="143" height="60"></a></p>
+						<p>Thank you for reaching out to National Payment Systems. We look forward to doing business with you. An account executive will be in contact with you within 48 hours.</p>
+						<p>If you need additional information or have questions, please email us at info@natpaysys.com</p>
+						<p><a href="http://natpaysys.com">natpaysys.com</a></p>
 					</td>
 				</tr>
 			</table>

@@ -193,16 +193,24 @@ input {
 	max-width: 100%;
 }
 
-#emv-hero {
-	background-image: url(../images/highway.jpg);
-	background-attachment: fixed;
+#emv-more {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/highway.jpg');
 	background-size: cover;
 	background-position: center;
+	color: #fff;
+	header h2 {
+		color: #fff;
+		text-align: right;
+	}
 }
 
-#emv-hero2 {
-	background-image: url(../images/pic01.jpg);
-	background-attachment: fixed;
+
+#emv-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic01.jpg');
 	background-size: cover;
 	background-position: center;
+	color: #fff;
+	header h2 {
+		color: #fff;
+	}
 }

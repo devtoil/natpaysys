@@ -11,19 +11,19 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2em;
 }
 
-header h2, 
-header h3, 
-header h4, 
-header h5, 
+header h2,
+header h3,
+header h4,
+header h5,
 header h6 {
 	margin-bottom: 0;
 }
 
-#promo-wrapper h1, 
-#promo-wrapper h2, 
-#promo-wrapper h3, 
-#promo-wrapper h4, 
-#promo-wrapper h5, 
+#promo-wrapper h1,
+#promo-wrapper h2,
+#promo-wrapper h3,
+#promo-wrapper h4,
+#promo-wrapper h5,
 #promo-wrapper h6 {
 	color: #fff;
 	font-weight: bold;
@@ -178,7 +178,6 @@ input {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	/*background-image: url(../images/shop.jpg);*/
 }
 
 
@@ -192,4 +191,18 @@ input {
 
 .image-wrapper.first:before {
 	max-width: 100%;
+}
+
+#emv-hero {
+	background-image: url(../images/highway.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#emv-hero2 {
+	background-image: url(../images/pic01.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
 }

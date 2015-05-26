@@ -247,6 +247,8 @@ input {
 		margin: 0;
 	}
 }
+
+
 #emv-more {
 	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/highway.jpg');
 	background-size: cover;
@@ -302,6 +304,15 @@ input {
 	}
 	.box.row {
 		margin-left: 0;
+	}
+
+	.gridbox {
+		height: 750px;
+	}
+
+	.solution-logo {
+		max-width: 100%;
+		margin-bottom: 50px;
 	}
 
 }

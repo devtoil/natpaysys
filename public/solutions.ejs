@@ -1,61 +1,77 @@
 
-<div class="wrapper">
+<div class="wrapper boxes">
 	<div class="container">
-		<div class="row">
-			<div class="3u">
-				<ul class="side-nav" id="solutions-nav">
-					<% for(var i = 0; i < public._data.solutions.length; i++ ) {  %>
-						<% var solution = public._data.solutions[i] %>
-						<% var formatted = public._data.solutions[i].replace(/-/g, ' ').toUpperCase() %>
-						<li>	
-							<a href="#<%= solution %>">
-								<%= formatted %>
-							</a>
-						</li>
-					<% }  %>
-				</ul>
-			</div>
-			<div class="9u">
-				<div id="apple-pay">
-					<%- partial("_shared/partials/solutions/apple-pay") %>
-				</div>
-				<div id="perka">
-					<%- partial("_shared/partials/solutions/perka") %>
-				</div>
-				<div id="analytics">
-					<%- partial("_shared/partials/solutions/analytics") %>
-				</div>
-				<div id="clover">
-					<%- partial("_shared/partials/solutions/clover") %>
-				</div>
-				<div id="pci">
-					<%- partial("_shared/partials/solutions/pci") %>
-				</div>
-				<div id="ach">
-					<%- partial("_shared/partials/solutions/ach") %>
-				</div>
-				<div id="ebt">
-					<%- partial("_shared/partials/solutions/ebt") %>
-				</div>
-				<div id="gift-cards">
-					<%- partial("_shared/partials/solutions/gift-cards") %>
-				</div>
-				<div id="emv">
-					<%- partial("_shared/partials/solutions/emv") %>
-				</div>
-				<div id="pos">
-					<%- partial("_shared/partials/solutions/pos") %>
-				</div>
-				<div id="terminals">
-					<%- partial("_shared/partials/solutions/terminals") %>
-				</div>
-				<div id="wireless">
-					<%- partial("_shared/partials/solutions/wireless") %>
-				</div>
-				
-			</div>
-		</div>
 
+		<div class="row">
+
+			<section class="12u">
+				<h1>Extra Ordinary Solutions <br />for Extraordinary Businesses</h1>
+				<p>Powerful combinations of business management hardware, software, and security for businesses ready to grow.</p>
+			</section>
+
+		</div>
+		<div class="row">
+
+			<section class="6u">
+				<div class="box">
+					<img src="/images/logo-insightics.jpg" alt="Insightics" />
+					<h3>Learn More About <br />Your Business</h3>
+					<p>What if you could uncover an entirely new side to your business? The Insightics solution uses your transaction data to deliver surprising insights that will help your business reach its full potential.</p>
+					<a href="/insightics" class="button">Learn About Insightics</a>
+				</div>
+			</section>
+
+			<section class="6u">
+				<div class="box">
+					<img src="/images/logo-perka.jpg" alt="Perka" />
+					<h3>Reward <br />Your Regulars</h3>
+					<p>What if your business could go wherever your customers go? With the Perka solution you can easily market your business and connect with customers to build lasting, rewarding relationships.</p>
+					<a href="/perka" class="button">Learn About Perka</a>
+				</div>
+			</section>
+
+		</div>
+		<div class="row">
+
+			<section class="12u">
+				<div class="box row">
+
+					<div class="5u">
+						<img src="/images/logo-transarmor.png" alt="TransArmor" />
+					</div>
+
+					<div class="7u">
+						<h3>Don't Risk Everything</h3>
+						<p>Security threats are a reality for any business that accepts credit or debit card payments, and just one breach can be crippling. Reduce the risk with the TransArmor Solution, a simple and complete way to protect your business and stay compliant with ever-changing payment card industry requirements.</p>
+						<a href="/transarmor" class="button">Learn About TransArmor</a>
+					</div>
+
+				</div>
+
+			</section>
+
+		</div>
+		<div class="row">
+
+			<section class="6u ">
+				<div class="box">
+					<img src="/images/logo-clover.jpg" alt="Clover" />
+					<h3>Take Your Business Further</h3>
+					<p>Running a business can be complicated - from accepting payments and managing inventory to keeping track of your customers and more. Clover simplifies your operations so you can focus on what matters most.</p>
+					<a href="/clover" class="button">Learn About Clover</a>
+				</div>
+			</section>
+
+			<section class="6u ">
+				<div class="box">
+					<img src="/images/logo-payeezy.jpg" alt="Payeezy" />
+					<h3>Expand Your Presence</h3>
+					<p>Growing your business means continually reaching new customers in new ways. With PayeezySM eCommerce Solution you get the simplest way to accept payments and grow sales online, helping you reach a whole new audience.</p>
+					<a href="/payeezy" class="button">Learn About Payeezy</a>
+				</div>
+			</section>
+
+		</div>
 
 	</div>
 </div>

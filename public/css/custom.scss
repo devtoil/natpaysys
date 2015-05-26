@@ -214,3 +214,40 @@ input {
 		color: #fff;
 	}
 }
+
+.solutions {
+	#header-wrapper {
+		background-image: none;
+	}
+	.boxes {
+		background: none;
+	}
+	color: #fff;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/thinking.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+	h1 {
+		color: #fff;
+	}
+
+	section {
+		text-align: center;
+	}
+
+	#footer-wrapper {
+		background-color: #fff;
+	}
+
+	.box {
+		background-color: #fff;
+		color: #222;
+		padding: 50px;
+	}
+	.box.row {
+		margin-left: 0;
+	}
+
+}

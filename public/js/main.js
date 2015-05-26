@@ -1,3 +1,19 @@
+;(function(){
+	$(document).ready(function(){
+		var clock;
+
+		var now = new Date();
+		var emvDeadline = new Date('October 1, 2015 00:00:00');
+		var diff = emvDeadline.getTime() / 1000 - now.getTime() / 1000;
+
+		clock = $('#emv-countdown').FlipClock(diff, {
+			countdown: true,
+			showSeconds: true,
+			clockFace: 'DailyCounter'
+		});
+	});
+}());
+
 (function(){
 	$(document).ready(function(){
 		// var base = 'http://snaimark.com:9000';

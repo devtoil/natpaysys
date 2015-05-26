@@ -1,0 +1,484 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nat Pay Sys</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                left
+                </div>
+                <div class="col-xs-9">
+                    <h1 class="text-center">Online Merchant Application</h1>
+
+                    <h2>1. Business Information</h2>
+                    
+
+                    <form name="signUpForm" class="">
+                      <div class="form-group">
+                        <label for="businessName">Business Name</label>
+                        <input type="text" class="form-control" id="businessName" name="businessName" placeholder="Business Name">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="legalName">Corporate/Legal Name</label>
+                          <input type="text" class="form-control" id="legalName" name="legalName" placeholder="Corporate/Legal Name">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="address">Business Address</label>
+                          <input type="text" class="form-control" id="address" name="address" placeholder="Business Address">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="city">City</label>
+                          <input type="text" class="form-control" id="city" name="city" placeholder="City">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="state">State</label>
+                          <input type="text" class="form-control" id="state" name="state" placeholder="State">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="zip">Zip</label>
+                          <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="locationPhone">Location Phone</label>
+                          <input type="text" class="form-control" id="locationPhone"  name="locationPhone" placeholder="Location Phone">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="locationFax">Location Fax</label>
+                          <input type="text" class="form-control" id="locationFax"  name="locationFax" placeholder="Location Fax">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="businessEmail">Business Email</label>
+                          <input type="text" class="form-control" id="businessEmail"  name="businessEmail" placeholder="Business Email">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contactName">Contact Name</label>
+                          <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Contact Name">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contactEmail">Contact Email</label>
+                          <input type="text" class="form-control" id="contactEmail" name="contactEmail" placeholder="Contact Email">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contactPhone">Contact Phone</label>
+                          <input type="text" class="form-control" id="contactPhone" name="contactPhone" placeholder="Contact Phone">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="businessWebSite">Business Web Site Address</label>
+                          <input type="text" class="form-control" id="businessWebSite" name="businessWebSite" placeholder="Business Web Site Address">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="customerServicePhone">Customer Service Phone #</label>
+                          <input type="text" class="form-control" id="customerServicePhone"  name="customerServicePhone" placeholder="Customer Service Phone #">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="customerServiceEmail">Customer Service Email Address</label>
+                          <input type="text" class="form-control" id="customerServiceEmail" name="customerServiceEmail" placeholder="Customer Service Email Address">
+                      </div>
+
+ 
+
+                      <div class="form-group">
+                        <label for="entityType">Type of Business Entity</label>
+                          <select class="form-control">
+                              <option>Select One</option>
+                            </select>
+                        
+                      </div>
+
+                      <div class="form-group">
+                        <label for="taxName">Name</label>
+                          <input type="text" class="form-control" id="taxName" name="taxName" placeholder="Name (as it appears on your income tax return)">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="sic">SIC/MCC</label>
+                          <input type="text" class="form-control" id="sic" name="sic" placeholder="SIC/MCC">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="servicesDescription">Services Description</label>
+                          <textarea type="text" class="form-control" id="servicesDescription" name="servicesDescription" placeholder="Detailed Explanation of Type of Merchandise, Products or Services Sold"></textarea>
+                      </div>
+
+
+
+                    <h2>2. Additional Credit. Site Survey Information</h2>
+
+
+                    <div class="form-group">
+                      <label for="zone">Zone</label>
+                        <select class="form-control" name="zone">
+                            <option>Select One</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="siteLocation">Location</label>
+                        <select class="form-control" name="siteLocation">
+                            <option>Select One</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="numEmployees">How Many Employees</label>
+                      <input type="text" class="form-control" id="numEmployees" name="numEmployees" placeholder="How Many Employees">
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="numRegisters">How Many Registers/Terminals</label>
+                        <input type="text" class="form-control" id="numRegisters" name="numRegisters" placeholder="How Many Registers/Terminals">
+                    </div>   
+
+                    <div class="form-group">
+                      <label for="licenseVisible">Proper License Visible</label>
+                        <select class="form-control" name="properLicenseVisible">
+                            <option>Select One</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="nameDisplayLocation">Where is the Merchant Name Displayed at the site?</label>
+                        <select class="form-control" name="nameDisplayLocation">
+                            <option>Select One</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="merchantOccupiesType">Merchat Occupies</label>
+                        <select class="form-control" name="merchantOccupies">
+                            <option>Select One</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="merchantFloorsNum">Number Of Floors/Levels</label>
+                       <select class="form-control" name="numberFloors">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="merchantRemainingFloorsNum">Remaining Floors Occupied By</label>
+                       <select class="form-control" name="merchantRemainingFloorsNum">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="merchantSquareFootage">Approximate Square Footage</label>
+                       <select class="form-control" name="merchantSquareFootage">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="merchantSquareFootage">Are customers Required to leave a deposit?</label>
+                       <select class="form-control" name="merchantSquareFootage">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="hasRefundPolicy">Return Policy</label>
+                       <select class="form-control" name="hasRefundPolicy">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="refundPolicyFor">Do you have a refund policy for MC/Visa/Discover Network/ Amex Sales?</label>
+                       <select class="form-control" name="refundPolicyFor">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="daysToSubmit">If MC/Visa/Discover Network/ Amex Sales Credit within how many days do you submit credit transaction</label>
+                       <select class="form-control" name="daysToSubmit">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="advertisingMethod">Advertising Method (attach at least one)</label>
+                       <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="advertisingMethodCatalog"> Catalog
+                          </label>
+                        </div>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="advertisingMethodBrochure"> Brochure
+                          </label>
+                        </div>
+
+                    <div class="form-group">
+                      <label for="previousProcessor">Previous Processor</label>
+                        <input type="text" class="form-control" id="previousProcessor" name="previousProcessor" placeholder="How Many Registers/Terminals">
+                    </div>  
+
+                    <div class="form-group">
+                      <label for="resonForLeaving">Reason for leaving previous processor</label>
+                       <select class="form-control" name="resonForLeaving">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="">Are you a mail order/telephone order, B2B, or internet only merchant?</label>
+                       <select class="form-control" name="merchnatType">
+                        <option>Select One</option>
+                      </select>
+                    </div>
+
+
+                    <h2>3. Company History</h2>
+
+                    
+                    <div class="form-group">
+                      <label for="dateBusinessStarted">Date Business Started</label>
+                        <input type="text" class="form-control" id="dateBusinessStarted" name="dateBusinessStarted" placeholder="Date Business Started"> 
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="">Prior Bankruptcies</label>
+                       <select class="form-control" name="priorBankruptcies">
+                        <option>Select One</option>
+                      </select>
+                    </div> 
+
+
+                    <h2>4. Owners/Partners/Officers</h2>
+                    
+
+                    <div class="form-group">
+                      <label for="owner1Name">Name (First, MI, Last)</label>
+                        <input type="text" class="form-control" id="owner1Name" name="owner1Name" placeholder="Name (First, MI, Last)">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1Percentage">Name (First, MI, Last)</label>
+                        <input type="text" class="form-control" id="owner1Percentage" name="owner1Percentage" placeholder="Name (First, MI, Last)">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1Title">Title</label>
+                        <input type="text" class="form-control" id="owner1Title" name="owner1Title" placeholder="Title">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1Address">Home Address (no PO Box)</label>
+                        <input type="text" class="form-control" id="owner1Address" name="owner1Address" placeholder="Home Address (no PO Box)">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1City">City</label>
+                        <input type="text" class="form-control" id="owner1City" name="owner1City" placeholder="City">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1State">State</label>
+                        <input type="text" class="form-control" id="owner1State" name="owner1State" placeholder="State"> 
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1Zip">Zip</label>
+                        <input type="text" class="form-control" id="owner1Zip" name="owner1Zip" placeholder="Zip">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1County">Country</label>
+                        <input type="text" class="form-control" id="owner1County" name="owner1County" placeholder="Country">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1Telephone">Home Telephone</label>
+                        <input type="text" class="form-control" id="owner1Telephone" name="owner1Telephone" placeholder="Home Telephone">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1SSN">Social Security #</label>
+                        <input type="text" class="form-control" id="owner1SSN" name="owner1SSN" placeholder="Social Security #">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1DOB">D.O.B</label>
+                        <input type="text" class="form-control" id="owner1DOB" name="owner1DOB" placeholder="D.O.B">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1DLNumber">DL #</label>
+                        <input type="text" class="form-control" id="owner1DLNumber" name="owner1DLNumber" placeholder="DL #">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="owner1DLState">State</label>
+                        <input type="text" class="form-control" id="owner1DLState" name="owner1DLState" placeholder="State">
+                    </div> 
+
+                    <h2>5. Settlement Information</h2>
+
+                    <div class="form-group">
+                      <label for="depositBankName">Deposit Bank Name</label>
+                        <input type="text" class="form-control" id="depositBankName" name="depositBankName" placeholder="Deposit Bank Name">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="bankContactName">Bank Contact Name</label>
+                        <input type="text" class="form-control" id="bankContactName" name="bankContactName" placeholder="Bank Contact Name">
+                    </div> 
+                    <div class="form-group">
+                      <label for="bankRoutingNum">Transit/ABA/Routing #</label>
+                        <input type="text" class="form-control" id="bankRoutingNum" name="bankRoutingNum" placeholder="Transit/ABA/Routing #">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="despositAccountNum">DDA/Deposit Account #</label>
+                        <input type="text" class="form-control" id="despositAccountNum" name="despositAccountNum" placeholder="DDA/Deposit Account #">
+                    </div> 
+
+                    <h2>6. Equipment/Third Party Information</h2>
+    
+                        
+                    <div class="form-group">
+                      <label for="">Do you use any third party to store, process or transmit cardholder data?</label>
+                       <select class="form-control" name="usesThirdPartyData">
+                        <option>Select One</option>
+                      </select>
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="">Equipment Type?</label>
+                       <select class="form-control" name="equipmentType">
+                        <option>Select One</option>
+                      </select>
+                    </div> 
+
+                    <h2>Financial Data</h2>
+                        
+                    <div class="form-group">
+                      <label for="yearlySalesVolume">Gross Yearly Sales Voume (cash+credit+debit+check)</label>
+                        <input type="text" class="form-control" id="yearlySalesVolume" name="yearlySalesVolume" placeholder="Gross Yearly Sales Voume (cash+credit+debit+check)">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="yearlyMCVisaVolume">Average Yearly MC/Visa Volume</label>
+                        <input type="text" class="form-control" id="yearlyMCVisaVolume" name="yearlyMCVisaVolume" placeholder="Average Yearly MC/Visa Volume">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="yearlyAmexVolume">Average Yearly Amex Volume</label>
+                        <input type="text" class="form-control" id="yearlyAmexVolume" name="yearlyAmexVolume" placeholder="Average Yearly Amex Volume">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="yearlyDiscoverVolume">Average Yearly Discover Network Volume</label>
+                        <input type="text" class="form-control" id="yearlyDiscoverVolume" name="yearlyDiscoverVolume" placeholder="Average Yearly Discover Network Volume">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="yearlyMCVisaDiscoverTicket">Average MC/Visa/Discover Ticket</label>
+                        <input type="text" class="form-control" id="yearlyMCVisaDiscoverTicket" name="yearlyMCVisaDiscoverTicket" placeholder="Average MC/Visa/Discover Ticket">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="averageAmexTicket">Average Amex Ticket</label>
+                        <input type="text" class="form-control" id="averageAmexTicket" name="averageAmexTicket" placeholder="Average Amex Ticket">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="highestTicketAmount">Highest Ticket Amount</label>
+                        <input type="text" class="form-control" id="highestTicketAmount" name="highestTicketAmount" placeholder="Highest Ticket Amount">
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="whereSaleTransacted">Where is sale transacted (must equal 100%)</label>
+                      <input type="text" class="form-control" id="whereSaleTransacted" name="whereSaleTransacted" placeholder="StoreFront/Swiped">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="whereSaleTransacted" name="whereSaleTransacted" placeholder="Internet">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="whereSaleTransacted" name="whereSaleTransacted" placeholder="Mail Order">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="whereSaleTransacted" name="whereSaleTransacted" placeholder="Telephone Order">
+                      <div>Total 100%</div>
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="uploadRecentStatement">Upload copy of most recent processing statement</label>
+                      <div>
+                          <input type="file" name="recentStatementUpload" accept="*">
+                      </div>
+                      
+                    </div> 
+
+                    <div class="form-group">
+                      <label for="voidCheckUpload">Upload copy of voided check</label>
+                      <div>
+                        <input type="file" name="voidCheckUpload" accept="*">
+                      </div>
+                    </div> 
+    
+
+                    <div class="form-group">
+                        <p>By clicking submit and sending us your responses, you agree to National Payment Systems' terms and conditions.  Once all materials are received, your account executive will populate an official application on your behalf. Usually within 72 hours you will be accepting credit cards.</p>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <div class="">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    
+
+        
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </body>
+</html>

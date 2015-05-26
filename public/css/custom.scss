@@ -93,8 +93,8 @@ input {
 }
 
 #content ul > li {
-	margin-left: 40px;
-	list-style-type: disc;
+	// margin-left: 40px;
+	// list-style-type: disc;
 }
 
 #header ul li {
@@ -118,8 +118,21 @@ input {
 	background-image: url(../images/shop.jpg);
 }
 
+#contact-form {
+	text-align: left;
+}
 #contact-form .row > * {
+	color: initial;
 	padding-bottom: 10px;
+
+	label {
+		color: initial;
+		text-align: left;
+	}
+
+	input {
+		color: initial;
+	}
 }
 .submit-button {
 	font-size: 1em;
@@ -174,10 +187,11 @@ input {
 }
 
 #header-wrapper {
-	background-image: url(../images/table.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
+	// background-image: url(../images/table.jpg);
+	// background-attachment: fixed;
+	// background-size: cover;
+	// background-position: center;
+	padding: 4em 0 0em 0;
 }
 
 
@@ -193,6 +207,46 @@ input {
 	max-width: 100%;
 }
 
+.flip-clock-wrapper {
+	width: auto;
+	ul {
+		border-radius: 0;
+	}
+}
+.flip-clock-divider .flip-clock-label {
+	bottom: -1.5em;
+	top: auto;
+	color: white;
+}
+.flip-clock-wrapper ul li a div div.inn {
+	background-color: #B2B2B2;
+	color: white;
+	border-radius: 0;
+}
+
+.flip-clock-wrapper ul li a div.down {
+	border-radius: 0;
+}
+
+#emv-countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  background-image: url(../images/city.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  z-index: 100;
+	p {
+		text-align: center;
+		font-size: 42px;
+		color: white;
+		padding: 60px 0 20px 0;
+		text-shadow: 2px 2px rgba(0,0,0,0.5);
+		margin: 0;
+	}
+}
 #emv-more {
 	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/highway.jpg');
 	background-size: cover;

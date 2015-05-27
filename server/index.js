@@ -17,6 +17,10 @@ app.use(function(req, res, next){
   next();
 });
 
+// app.get('/', function(req, res){
+//   res.end('Hi from NatPaySys');
+// });
+
 // uploads files to a directory and populates req.files with file objects
 app.use(multer({ 
 	putSingleFilesInArray: true,
@@ -58,6 +62,9 @@ app.post('/contact', function (req, res) {
 });
 app.post('/document-upload', function (req, res) {
   ContactController.doDocumentSubmit(req, res);
+});
+app.post('/portal-registration', function (req, res) {
+  ContactController.doPortalRegistrationSubmit(req, res);
 });
 
 app.use(express.static(publicPath));

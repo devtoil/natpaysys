@@ -82,7 +82,36 @@ module.exports = {
 	        res.send(info);
 			});
 	},
+	doPortalRegistrationSubmit: function(req, res){
+			var self = this;
+			var contact = req.body;
+
+			mailTransport.sendMail({
+			    from: 'info@natpaysys.com',
+			    to: contactSubmitRecipients,
+			    subject: 'New Portal Registration',
+			    template: 'portal-registration',
+			    context: contact
+			}, function(err, info){
+					if(err) {
+						console.log(err);
+						return;
+					}
+
+					console.log('mail sent ', info);
+	        if(contact.email) {
+	          self.sendConfirmationEmail(contact);
+	        }
+	        
+	        res.status(200);
+	        res.send(info);
+			});
+	},
 	sendConfirmationEmail: function(contact){
+		if(!contact.email) {
+			return;
+		}
+
 		mailTransport.sendMail({
 		    from: 'info@natpaysys.com',
 		    to: contact.email,
@@ -94,7 +123,7 @@ module.exports = {
 		      return;
 		    }
 
-		    console.log('mail sent ', info);
+		    console.log('confirmation mail sent ', info);
 		});
 	}
 }

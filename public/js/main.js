@@ -16,14 +16,14 @@
 
 (function(){
 	$(document).ready(function(){
-		// var base = 'http://snaimark.com:9000';
-		var base = '';
+		var base = 'http://snaimark.com:9000';
 		var $contactForm = $('#contact-form');
 		var $documentSubmitForm = $('#doc-submit-form');
-		var $contactSubmitButton = $('#contact-form-submit');
+		var $portalRegistrationForm = $('#portal-registration-form');
 
 		$contactForm.on('submit', sendContact);
 		$documentSubmitForm.on('submit', sendDocumentUpload);
+		$portalRegistrationForm.on('submit', sendPortalRegistration);
 
 		function FormHandler(form){
 			var $form;
@@ -96,6 +96,28 @@
 
 	   	return false;
 		}
+
+		function sendPortalRegistration(){
+			event.preventDefault();
+
+			var formHandler = new FormHandler($portalRegistrationForm);
+			formHandler.startContactSending();
+			
+			var data = new FormData($portalRegistrationForm[0]);
+
+			$.ajax({
+			  method: "POST",
+			  url: base + "/portal-registration",
+			  contentType: false,
+			  processData: false,
+			  data: data
+			})
+			.complete(function(){
+			  formHandler.endContactSending();
+			});
+
+	   	return false;
+		}		
 
 		$.getJSON(base + '/solutionsMeta')
 		.then(function(files){

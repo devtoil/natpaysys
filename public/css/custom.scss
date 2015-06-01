@@ -323,17 +323,88 @@ body.solutions {
 
 }
 
-body.clover {
 
-		background: url('../images/banner/199H.jpg');
+body.clover {
+	background: url('../images/banner/199H.jpg');
+
+	.heroimg {
+		background: url('../images/hero-clover.png');
+		width: 724px;
+		height: 317px;
+		margin: -250px auto 0;
+	}
+}
+
+body.insightics {
+	background: url('../images/banner/35H.jpg');
+
+	.heroimg {
+		background: url('../images/hero-insightics.png');
+		width: 724px;
+		height: 317px;
+		margin: -250px auto 0;
+	}
+}
+
+body.payeezy {
+	background: url('../images/banner/62H.jpg');
+
+	.heroimg {
+		background: url('../images/hero-payeezy.png');
+		width: 724px;
+		height: 317px;
+		margin: -250px auto 0;
+	}
+}
+
+body.perka {
+	background: url('../images/banner/70H.jpg');
+
+	.heroimg {
+		background: url('../images/hero-perka.png');
+		width: 724px;
+		height: 317px;
+		margin: -250px auto 0;
+	}
+}
+
+body.transarmor {
+	background: url('../images/banner/73H.jpg');
+
+	.heroimg {
+		background: url('../images/hero-transarmor.png');
+		width: 724px;
+		height: 317px;
+		margin: -250px auto 0;
+	}
+}
+
+body.clover,
+body.payeezy,
+body.insightics,
+body.perka,
+body.transarmor {
 	    background-repeat: no-repeat;
 	    background-attachment: fixed;
 		background-size: auto;
 		background-position: center top;
 
-
 	.subsolutions {
 		background: #fff;
-		margin-top: 200px;
+		margin-top: 500px;
+		overflow-x: visible;
+		padding-top: 0;
+	}
+
+	.heroimg {
+	    background-repeat: no-repeat;
+		background-size: auto;
+		background-position: center top;
+	}
+
+	#footer-wrapper {
+		background-color: #fff;
 	}
 }
+
+

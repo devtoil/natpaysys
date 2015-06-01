@@ -274,19 +274,22 @@ input {
 	}
 }
 
-.solutions {
+body.solutions {
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/thinking.jpg');
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+
 	#header-wrapper {
 		background-image: none;
 	}
 	.boxes {
 		background: none;
 	}
-	color: #fff;
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/thinking.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
+	#content {
+		color: #fff;
+	}
 
 	h1 {
 		color: #fff;
@@ -318,4 +321,19 @@ input {
 		margin-bottom: 50px;
 	}
 
+}
+
+body.clover {
+
+		background: url('../images/banner/199H.jpg');
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+		background-size: auto;
+		background-position: center top;
+
+
+	.subsolutions {
+		background: #fff;
+		margin-top: 200px;
+	}
 }

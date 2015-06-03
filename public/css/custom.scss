@@ -218,11 +218,14 @@ input {
 	border: none;
 }
 
+.homepage #header-wrapper {
+	background-image: url(../images/table.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
 #header-wrapper {
-	// background-image: url(../images/table.jpg);
-	// background-attachment: fixed;
-	// background-size: cover;
-	// background-position: center;
 	padding: 4em 0 0em 0;
 }
 

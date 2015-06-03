@@ -22,7 +22,7 @@
 		<script src="/js/skel-panels.min.js"></script>
 		<script src="/js/init.js"></script>
 		<script src="/js/main.js"></script>
-		
+
 		<noscript>
 			<link rel="stylesheet" href="/css/skel-noscript.css" />
 			<link rel="stylesheet" href="/css/style.css" />
@@ -31,18 +31,16 @@
 		<link rel="stylesheet" type="text/css" href="/css/flipclock.css">
 		<link rel="stylesheet" type="text/css" href="/css/custom.css">
 	</head>
-	
-	<% var className = (current.source == 'index') ? "homepage" : current.source; %>	
+
+	<% var className = (current.source == 'index') ? "homepage" : current.source; %>
 	<body class="<%- className %>">
 
-		<!-- Header Wrapper -->
 		<%- partial("_shared/header") %>
-			
+
 		<div id="content">
 			<%- yield %>
 		</div>
-		
-		<!-- Footer Wrapper -->
+
 		<%- partial("_shared/footer") %>
 
 	</body>

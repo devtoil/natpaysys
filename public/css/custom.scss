@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 30px;
 	line-height: 1.2em;
 }
+h5 {
+	font-weight: bold;
+}
+
 
 header h2,
 header h3,
@@ -23,9 +27,19 @@ header h6 {
 	position: relative;
 }
 
+.video-wrapper {
+	width: 100%;
+	background: #000;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 30px 0 20px;
+}
+.video {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .BrightcoveExperience {
-	width: 1440px;
-	height: 810px;
+	width: 1200px;
 }
 
 #promo-wrapper h1,
@@ -39,6 +53,8 @@ header h6 {
 }
 #promo-wrapper {
 	padding: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .homepage #promo-wrapper {
@@ -54,7 +70,11 @@ header h6 {
 .emv #promo-wrapper.emvprep {
 	background-image: url(../images/pic07.jpg);
 }
-
+#promo-wrapper.promo-perka {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/banner/25H.jpg');
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
 .emphasis {
 	color: #f35858;
